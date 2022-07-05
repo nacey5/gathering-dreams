@@ -1,6 +1,7 @@
 package com.hzh.gatheringproject.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
@@ -22,9 +23,10 @@ public class User {
     @TableId(value = "id", type = IdType.AUTO)
     private  int id;
     private  String name;
+    @TableField("nick_name")
     private  String nickName;
     private  String phone;
-    private  String gender;
+    private  int gender;
     private  String email;
     private  int age;
     private  String password;

@@ -2,7 +2,7 @@ server:
   port: 80
 spring:
   profiles:
-    active: df
+    active: default
     group:
       "default": dfDB
   application:

@@ -1,43 +1,151 @@
-2022-07-05 11:03:52.264  INFO 13404 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 13404 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-05 11:03:52.273  INFO 13404 --- [main] c.h.g.GatheringProjectApplication        : The following 1 profile is active: "df"
-2022-07-05 11:03:55.322  INFO 13404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-05 11:03:55.353  INFO 13404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-05 11:03:55.355  INFO 13404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-05 11:03:55.698  INFO 13404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-05 11:03:55.699  INFO 13404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3272 ms
-2022-07-05 11:03:56.745  WARN 13404 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-07-05 11:03:56.755  INFO 13404 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-07-05 11:03:56.797  INFO 13404 --- [main] ConditionEvaluationReportLoggingListener : 
+2022-07-06 11:32:49.914  INFO 3308 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-06 11:32:50.436  INFO 3308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-06 11:32:50.445  INFO 3308 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 2.212 seconds (JVM running for 3.131)
+2022-07-06 11:33:46.085  INFO 13172 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 13172 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-06 11:33:46.088  INFO 13172 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
+2022-07-06 11:33:46.938  INFO 13172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-06 11:33:46.946  INFO 13172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 11:33:46.947  INFO 13172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-06 11:33:47.037  INFO 13172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 11:33:47.037  INFO 13172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 900 ms
+2022-07-06 11:33:47.349  INFO 13172 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-06 11:34:03.270  INFO 18444 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 18444 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-06 11:34:03.273  INFO 18444 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
+2022-07-06 11:34:04.100  INFO 18444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-06 11:34:04.108  INFO 18444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 11:34:04.109  INFO 18444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-06 11:34:04.202  INFO 18444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 11:34:04.203  INFO 18444 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 885 ms
+2022-07-06 11:34:04.514  INFO 18444 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-06 11:34:04.939  INFO 18444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-06 11:34:04.949  INFO 18444 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 2.108 seconds (JVM running for 3.001)
+2022-07-06 11:37:18.617  INFO 18444 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-06 11:37:18.618  INFO 18444 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-06 11:37:18.620  INFO 18444 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-06 12:10:04.864  INFO 17004 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 17004 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-06 12:10:04.867  INFO 17004 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
+2022-07-06 12:10:05.675  INFO 17004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-06 12:10:05.682  INFO 17004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 12:10:05.683  INFO 17004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-06 12:10:05.766  INFO 17004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 12:10:05.766  INFO 17004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 857 ms
+2022-07-06 12:10:06.037  INFO 17004 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-06 12:10:06.416  INFO 17004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-06 12:10:06.425  INFO 17004 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 1.95 seconds (JVM running for 2.806)
+2022-07-06 12:10:22.013  INFO 19284 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 19284 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-06 12:10:22.017  INFO 19284 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
+2022-07-06 12:10:22.809  INFO 19284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-06 12:10:22.815  INFO 19284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 12:10:22.816  INFO 19284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-06 12:10:22.899  INFO 19284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 12:10:22.899  INFO 19284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 835 ms
+2022-07-06 12:10:23.168  INFO 19284 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-06 12:10:23.559  INFO 19284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-06 12:10:23.566  INFO 19284 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 1.955 seconds (JVM running for 2.788)
+2022-07-06 12:10:27.673  INFO 19284 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-06 12:10:27.673  INFO 19284 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-06 12:10:27.674  INFO 19284 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-06 12:10:27.954  WARN 19284 --- [http-nio-80-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [211] milliseconds.
+2022-07-06 12:30:57.884  INFO 3356 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 3356 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-06 12:30:57.887  INFO 3356 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
+2022-07-06 12:30:58.677  INFO 3356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-06 12:30:58.683  INFO 3356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 12:30:58.684  INFO 3356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-06 12:30:58.768  INFO 3356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 12:30:58.768  INFO 3356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 839 ms
+2022-07-06 12:30:59.051  INFO 3356 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-06 12:30:59.416  INFO 3356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-06 12:30:59.424  INFO 3356 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 1.951 seconds (JVM running for 2.83)
+2022-07-06 12:31:21.802  INFO 3356 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-06 12:31:21.803  INFO 3356 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-06 12:31:21.804  INFO 3356 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-06 12:31:57.513  INFO 12844 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 12844 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-06 12:31:57.515  INFO 12844 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
+2022-07-06 12:31:58.289  INFO 12844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-06 12:31:58.296  INFO 12844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 12:31:58.296  INFO 12844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-06 12:31:58.382  INFO 12844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 12:31:58.383  INFO 12844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 828 ms
+2022-07-06 12:31:58.669  INFO 12844 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-06 12:31:59.061  INFO 12844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-06 12:31:59.070  INFO 12844 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 1.96 seconds (JVM running for 2.79)
+2022-07-06 12:33:10.178  INFO 12080 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 12080 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-06 12:33:10.181  INFO 12080 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
+2022-07-06 12:33:10.994  INFO 12080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-06 12:33:11.001  INFO 12080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 12:33:11.001  INFO 12080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-06 12:33:11.086  INFO 12080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 12:33:11.087  INFO 12080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2022-07-06 12:33:11.358  INFO 12080 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-06 12:33:11.741  INFO 12080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-06 12:33:11.750  INFO 12080 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 1.986 seconds (JVM running for 2.863)
+2022-07-06 12:33:51.668  INFO 12080 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-06 12:33:51.669  INFO 12080 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-06 12:33:51.670  INFO 12080 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-06 13:26:35.755  INFO 15760 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 15760 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-06 13:26:35.758  INFO 15760 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
+2022-07-06 13:26:36.520  INFO 15760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-06 13:26:36.527  INFO 15760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 13:26:36.528  INFO 15760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-06 13:26:36.608  INFO 15760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 13:26:36.608  INFO 15760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 804 ms
+2022-07-06 13:26:36.880  INFO 15760 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-06 13:26:37.245  INFO 15760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-06 13:26:37.253  INFO 15760 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 1.881 seconds (JVM running for 2.752)
+2022-07-06 13:26:41.905  INFO 15760 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-06 13:26:41.905  INFO 15760 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-06 13:26:41.906  INFO 15760 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-06 13:26:41.931 ERROR 15760 --- [http-nio-80-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Current request is not a multipart request] with root cause
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-07-05 11:03:56.855 ERROR 13404 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+org.springframework.web.multipart.MultipartException: Current request is not a multipart request
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueInternal(RequestParamMethodArgumentResolver.java:210) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:193) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.64.jar:9.0.64]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
 
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles df are currently active).
-
-2022-07-05 11:27:37.257  INFO 14128 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 14128 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-05 11:27:37.261  INFO 14128 --- [main] c.h.g.GatheringProjectApplication        : The following 1 profile is active: "df"
-2022-07-05 11:27:38.110  INFO 14128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-05 11:27:38.118  INFO 14128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-05 11:27:38.118  INFO 14128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-05 11:27:38.209  INFO 14128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-05 11:27:38.209  INFO 14128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 890 ms
-2022-07-05 11:27:38.654  INFO 14128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-05 11:27:38.664  INFO 14128 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 1.919 seconds (JVM running for 2.953)
-2022-07-05 11:27:56.849  INFO 14128 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-05 11:27:56.850  INFO 14128 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-05 11:27:56.851  INFO 14128 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
