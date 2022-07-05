@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    #配置基本数据源
+    url: jdbc:mysql://127.0.0.1:3306/gathering-dreams?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+    password: a1160124552
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    #配置其他数据源
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvicionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000

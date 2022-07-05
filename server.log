@@ -1,0 +1,43 @@
+2022-07-05 11:03:52.264  INFO 13404 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 13404 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-05 11:03:52.273  INFO 13404 --- [main] c.h.g.GatheringProjectApplication        : The following 1 profile is active: "df"
+2022-07-05 11:03:55.322  INFO 13404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-05 11:03:55.353  INFO 13404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 11:03:55.355  INFO 13404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 11:03:55.698  INFO 13404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 11:03:55.699  INFO 13404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3272 ms
+2022-07-05 11:03:56.745  WARN 13404 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-07-05 11:03:56.755  INFO 13404 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 11:03:56.797  INFO 13404 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 11:03:56.855 ERROR 13404 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles df are currently active).
+
+2022-07-05 11:27:37.257  INFO 14128 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 14128 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-05 11:27:37.261  INFO 14128 --- [main] c.h.g.GatheringProjectApplication        : The following 1 profile is active: "df"
+2022-07-05 11:27:38.110  INFO 14128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-05 11:27:38.118  INFO 14128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 11:27:38.118  INFO 14128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 11:27:38.209  INFO 14128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 11:27:38.209  INFO 14128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 890 ms
+2022-07-05 11:27:38.654  INFO 14128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-05 11:27:38.664  INFO 14128 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 1.919 seconds (JVM running for 2.953)
+2022-07-05 11:27:56.849  INFO 14128 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-05 11:27:56.850  INFO 14128 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-05 11:27:56.851  INFO 14128 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

@@ -1,0 +1,23 @@
+server:
+  port: 80
+spring:
+  profiles:
+    active: df
+    group:
+      "default": dfDB
+  application:
+    name: gathering-dreams
+logging:
+  group:
+    entity: com.hzh.gatheringproject.controller,com.hzh.gatheringproject.service,com.hzh.gatheringproject.dao
+    common: com.hzh.gatheringproject
+  level:
+    root: info
+    entity: warn
+    common: info
+  file:
+    name: server.log
+  logback:
+    rollingpolicy:
+      max-file-size: 100KB
+      file-name-pattern: server.%d{yyyy-MM-dd}.%i.log
