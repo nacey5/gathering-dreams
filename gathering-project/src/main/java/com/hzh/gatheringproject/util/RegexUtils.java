@@ -1,6 +1,6 @@
 package com.hzh.gatheringproject.util;
 
-import com.alibaba.druid.util.StringUtils;
+import cn.hutool.core.util.StrUtil;
 import com.hzh.gatheringproject.generics.RegexPatterns;
 
 /**
@@ -44,7 +44,7 @@ public class RegexUtils {
      * @return
      */
     public static boolean mismatch(String str,String regex){
-        if (StringUtils.isEmpty(str)) {
+        if (StrUtil.isBlank(str)) {
             return true;
         }
         return !str.matches(regex);

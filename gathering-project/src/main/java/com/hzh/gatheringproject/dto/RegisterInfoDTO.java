@@ -21,4 +21,6 @@ public class RegisterInfoDTO extends User {
     private int age;
     private String password;
     private String icon;
+    private String phoneCode;
+    private String emailCode;
 }

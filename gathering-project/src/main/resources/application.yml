@@ -4,12 +4,12 @@ spring:
   profiles:
     active: default
     group:
-      "default": dfDB
+      "default": dfDB,dfDefaultAddress
   application:
     name: gathering-dreams
 logging:
   group:
-    entity: com.hzh.gatheringproject.controller,com.hzh.gatheringproject.service,com.hzh.gatheringproject.dao
+    entity: com.hzh.gatheringproject.controller,com.hzh.gatheringproject.service,com.hzh.gatheringproject.mapper
     common: com.hzh.gatheringproject
   level:
     root: info

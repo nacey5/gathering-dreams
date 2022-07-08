@@ -6,6 +6,8 @@ import com.hzh.gatheringproject.dto.Result;
 import com.hzh.gatheringproject.entity.User;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpSession;
+
 /**
  * @author DAHUANG
  * @date 2022/7/5
@@ -15,10 +17,10 @@ public interface UserService {
     /**
      * select User by condition
      * @param loginFormDTO
-     * @param password
+     * @param session
      * @return
      */
-    Result selectUserByCodeAndPassword(LoginFormDTO loginFormDTO, String password);
+    Result selectUserByCodeAndPassword(LoginFormDTO loginFormDTO, HttpSession session);
 
     /**
      * insert into by condition
@@ -26,4 +28,19 @@ public interface UserService {
      * @return
      */
     Result insertUserForRegister(RegisterInfoDTO registerInfoDTO);
+
+    /**
+     * 发送验证码
+     * @param phone
+     * @param session
+     * @return
+     */
+    Result sendCode(String phone, HttpSession session);
+
+    /**
+     * 发送邮箱验证码
+     * @param mail
+     * @return
+     */
+    Result sendMailCode(String mail);
 }

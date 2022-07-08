@@ -12,4 +12,5 @@ import java.io.Serializable;
 public class LoginFormDTO implements Serializable {
     String codePhoneOrEmail;
     String password;
+    String checkCode;
 }

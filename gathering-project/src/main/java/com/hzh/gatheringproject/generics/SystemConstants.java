@@ -6,4 +6,7 @@ package com.hzh.gatheringproject.generics;
  */
 public class SystemConstants {
     public static final String IMAGE_UPLOAD_DIR="F:\\tempImage\\";
+
+    public static final String CHECK_PHONE="phone";
+
 }
