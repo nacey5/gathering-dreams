@@ -1,5 +1,8 @@
 package com.hzh.gatheringproject.service.impl;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.bean.copier.CopyOptions;
+import cn.hutool.core.lang.UUID;
 import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -58,14 +61,24 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
                 map.put(SystemConstants.CHECK_PHONE,loginFormDTO.getCodePhoneOrEmail());
                 users = userMapper.selectByMap(map);
             }
-            //TODO 存在，保存在redis中-》token
+            //存在，保存在redis中-》token
             if (users!=null&&users.size()>0) {
                 User user = users.get(0);
+                String token = UUID.randomUUID().toString(true);
+                //这个的作用是为了解决long无法转换成string的异常-java.base/java.lang.Long cannot be cast to java.base/java.lang.String
+                Map<String, Object> userMap = BeanUtil.beanToMap(user,new HashMap<>(),
+                        CopyOptions.create().setIgnoreNullValue(true).
+                                setFieldValueEditor((fieldName,fieldValue)->fieldValue.toString()));
+                //t3--存储数据到redis中
+                stringRedisTemplate.opsForHash().putAll(RedisConstants.LOGIN_USER_KEY+token,userMap);
+                //设置token的有效期
+                stringRedisTemplate.expire(RedisConstants.LOGIN_USER_KEY+token, RedisConstants.LOGIN_USER_TTL,TimeUnit.SECONDS);
+                //返回token
+                return Result.ok(token);
 
-                return Result.ok(user);
             }
             //不存在，返回失败信息让其注册
-            return Result.fail("您还没有注册");
+            return Result.fail("您还没有注册或者验证码失败");
         }
         QueryWrapper<User> queryWrapper=new QueryWrapper<>();
         //对账号格式进行检验，是否为邮箱或者为手机号码
@@ -73,9 +86,17 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
             queryWrapper.eq("phone",loginFormDTO.getCodePhoneOrEmail()).or().eq("email",loginFormDTO.getCodePhoneOrEmail()).eq("password",loginFormDTO.getPassword());
             User user = userMapper.selectOne(queryWrapper);
             if (user != null&&user.getId()>0) {
-                //TODO 保存在redis中->token令牌
-
-                return Result.ok(user);
+                //保存在redis中->token令牌
+                String token = UUID.randomUUID().toString(true);
+                Map<String, Object> userMap = BeanUtil.beanToMap(user,new HashMap<>(),
+                        CopyOptions.create().setIgnoreNullValue(true).
+                                setFieldValueEditor((fieldName,fieldValue)->fieldValue.toString()));
+                //t3--存储数据到redis中
+                stringRedisTemplate.opsForHash().putAll(RedisConstants.LOGIN_USER_KEY+token,userMap);
+                //设置token的有效期
+                stringRedisTemplate.expire(RedisConstants.LOGIN_USER_KEY+token, RedisConstants.LOGIN_USER_TTL,TimeUnit.SECONDS);
+                //返回token
+                return Result.ok(token);
             }else {
                 return Result.fail("密码和手机或邮箱不匹配");
             }
@@ -93,15 +114,16 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
             return Result.fail("您的密码或者手机或者邮箱的格式错误");
         }
         //进行手机验证码和邮箱验证码验证
-        String checkPhoneCode = stringRedisTemplate.opsForValue().get(RedisConstants.REGISTER_CODE_KEY + registerInfoDTO.getPhone());
+        String checkPhoneCode = stringRedisTemplate.opsForValue().get(RedisConstants.LOGIN_CODE_KEY + registerInfoDTO.getPhone());
         String checkEmailCode = stringRedisTemplate.opsForValue().get(RedisConstants.EMAIL_CODE_KEY + registerInfoDTO.getEmail());
-        if (registerInfoDTO.getEmail().equals(checkEmailCode)&&registerInfoDTO.getPhone().equals(checkPhoneCode)){
+        if ((registerInfoDTO.getEmailCode().equals(checkEmailCode))&&(registerInfoDTO.getPhoneCode().equals(checkPhoneCode))){
             int insert = userMapper.insert(registerInfoDTO);
+            log.warn(insert+"");
             if (insert>0) {
-                return Result.ok();
+                return Result.ok("注册成功");
             }
         }
-        return Result.fail("错误的注册信息");
+        return Result.fail("验证码错误");
     }
 
     @Override

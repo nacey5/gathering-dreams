@@ -1,171 +1,81 @@
-2022-07-06 22:44:46.686  INFO 112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-06 22:44:46.795  INFO 112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-06 22:44:46.795  INFO 112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1059 ms
-2022-07-06 22:44:47.069  INFO 112 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-06 22:44:48.119  INFO 112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-06 22:44:48.128  INFO 112 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 2.864 seconds (JVM running for 3.781)
-2022-07-06 22:45:03.373  INFO 112 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-06 22:45:03.374  INFO 112 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-06 22:45:03.375  INFO 112 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-06 22:45:03.657  WARN 112 --- [http-nio-80-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [239] milliseconds.
-2022-07-06 22:45:04.279  WARN 112 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码511985
-2022-07-06 22:45:23.152  WARN 112 --- [http-nio-80-exec-2] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码671479
-2022-07-06 22:45:45.656  INFO 21048 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 21048 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-06 22:45:45.659  INFO 21048 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
-2022-07-06 22:45:46.345  INFO 21048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-06 22:45:46.347  INFO 21048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-06 22:45:46.365  INFO 21048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-2022-07-06 22:45:46.804  INFO 21048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-06 22:45:46.818  INFO 21048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-06 22:45:46.818  INFO 21048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-06 22:45:46.933  INFO 21048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-06 22:45:46.933  INFO 21048 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1204 ms
-2022-07-06 22:45:47.231  INFO 21048 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-06 22:45:48.315  INFO 21048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-06 22:45:48.324  INFO 21048 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 3.137 seconds (JVM running for 4.083)
-2022-07-06 22:46:08.156  INFO 21048 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-06 22:46:08.156  INFO 21048 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-06 22:46:08.157  INFO 21048 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-06 22:46:08.429  WARN 21048 --- [http-nio-80-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [239] milliseconds.
-2022-07-06 22:46:09.038  WARN 21048 --- [http-nio-80-exec-2] c.h.g.service.impl.UserServiceImpl       : {"phone":"123"}
-2022-07-06 22:46:09.038  WARN 21048 --- [http-nio-80-exec-2] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码568209
-2022-07-06 22:46:57.721  INFO 9276 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 9276 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-06 22:46:57.724  INFO 9276 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
-2022-07-06 22:46:58.468  INFO 9276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-06 22:46:58.471  INFO 9276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-06 22:46:58.498  INFO 9276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-2022-07-06 22:46:59.036  INFO 9276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-06 22:46:59.048  INFO 9276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-06 22:46:59.049  INFO 9276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-06 22:46:59.169  INFO 9276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-06 22:46:59.170  INFO 9276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1389 ms
-2022-07-06 22:46:59.525  INFO 9276 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-06 22:47:00.890  INFO 9276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-06 22:47:00.903  INFO 9276 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 3.748 seconds (JVM running for 4.896)
-2022-07-06 22:47:17.268  INFO 9276 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-06 22:47:17.269  INFO 9276 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-06 22:47:17.271  INFO 9276 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-07-06 22:47:17.606  WARN 9276 --- [http-nio-80-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [298] milliseconds.
-2022-07-06 22:47:18.347  WARN 9276 --- [http-nio-80-exec-2] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码616841
-2022-07-06 22:47:47.228  INFO 17364 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 17364 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-06 22:47:47.232  INFO 17364 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
-2022-07-06 22:47:48.046  INFO 17364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-06 22:47:48.048  INFO 17364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-06 22:47:48.070  INFO 17364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
-2022-07-06 22:47:48.591  INFO 17364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-06 22:47:48.601  INFO 17364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-06 22:47:48.601  INFO 17364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-06 22:47:48.721  INFO 17364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-06 22:47:48.722  INFO 17364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1426 ms
-2022-07-06 22:47:49.077  INFO 17364 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-06 22:47:50.347  INFO 17364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-06 22:47:50.359  INFO 17364 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 3.683 seconds (JVM running for 4.832)
-2022-07-06 22:47:54.853  INFO 17364 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-06 22:47:54.854  INFO 17364 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-06 22:47:54.855  INFO 17364 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-06 22:47:55.182  WARN 17364 --- [http-nio-80-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [288] milliseconds.
-2022-07-06 22:47:55.912  WARN 17364 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : null
-2022-07-06 22:47:55.913  WARN 17364 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码997941
-2022-07-06 22:49:03.325  INFO 14692 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 14692 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-06 22:49:03.328  INFO 14692 --- [main] c.h.g.GatheringProjectApplication        : The following 2 profiles are active: "default", "dfDB"
-2022-07-06 22:49:04.089  INFO 14692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-06 22:49:04.092  INFO 14692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-06 22:49:04.115  INFO 14692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
-2022-07-06 22:49:04.646  INFO 14692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-06 22:49:04.658  INFO 14692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-06 22:49:04.659  INFO 14692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-06 22:49:04.775  INFO 14692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-06 22:49:04.775  INFO 14692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1391 ms
-2022-07-06 22:49:05.118  INFO 14692 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-06 22:49:06.426  INFO 14692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-06 22:49:06.436  INFO 14692 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 3.674 seconds (JVM running for 4.817)
-2022-07-06 22:49:11.840  INFO 14692 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-06 22:49:11.841  INFO 14692 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-06 22:49:11.842  INFO 14692 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-06 22:49:11.873  WARN 14692 --- [http-nio-80-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'phone' for method parameter type String is not present]
-2022-07-06 22:50:01.591  WARN 14692 --- [http-nio-80-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'phone' for method parameter type String is not present]
-2022-07-06 22:50:45.987  WARN 14692 --- [http-nio-80-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [296] milliseconds.
-2022-07-06 22:50:46.771  WARN 14692 --- [http-nio-80-exec-3] c.h.g.service.impl.UserServiceImpl       : 13670583984
-2022-07-06 22:50:46.771  WARN 14692 --- [http-nio-80-exec-3] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码311662
-2022-07-06 22:51:12.692  WARN 14692 --- [http-nio-80-exec-6] c.h.g.service.impl.UserServiceImpl       : 13670583984
-2022-07-06 22:51:12.693  WARN 14692 --- [http-nio-80-exec-6] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码340727
-2022-07-08 16:40:16.211  INFO 12836 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 12836 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-08 16:40:16.262  INFO 12836 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
-2022-07-08 16:40:16.883  INFO 12836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-08 16:40:16.886  INFO 12836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-08 16:40:16.907  INFO 12836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2022-07-08 16:40:17.375  INFO 12836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-08 16:40:17.386  INFO 12836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-08 16:40:17.386  INFO 12836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-08 16:40:17.538  INFO 12836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-08 16:40:17.538  INFO 12836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1233 ms
-2022-07-08 16:40:17.906  INFO 12836 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-08 16:40:19.123  INFO 12836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-08 16:40:19.133  INFO 12836 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 3.416 seconds (JVM running for 4.663)
-2022-07-08 16:40:47.051  INFO 12836 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-08 16:40:47.052  INFO 12836 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-08 16:40:47.053  INFO 12836 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-08 16:40:47.424  WARN 12836 --- [http-nio-80-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [276] milliseconds.
-2022-07-08 16:41:04.454  WARN 12836 --- [http-nio-80-exec-3] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码809762
-2022-07-08 16:47:29.380  INFO 19372 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 19372 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-08 16:47:29.385  INFO 19372 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
-2022-07-08 16:47:29.998  INFO 19372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-08 16:47:30.000  INFO 19372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-08 16:47:30.021  INFO 19372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
-2022-07-08 16:47:30.454  INFO 19372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-08 16:47:30.462  INFO 19372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-08 16:47:30.463  INFO 19372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-08 16:47:30.573  INFO 19372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-08 16:47:30.573  INFO 19372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1141 ms
-2022-07-08 16:47:30.861  INFO 19372 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-08 16:47:31.938  INFO 19372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-08 16:47:31.949  INFO 19372 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 3.006 seconds (JVM running for 3.982)
-2022-07-08 16:47:35.886  INFO 19372 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-08 16:47:35.886  INFO 19372 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-08 16:47:35.887  INFO 19372 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-08 16:48:07.227  INFO 4308 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 4308 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-08 16:48:07.231  INFO 4308 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
-2022-07-08 16:48:07.850  INFO 4308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-08 16:48:07.853  INFO 4308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-08 16:48:07.874  INFO 4308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-2022-07-08 16:48:08.306  INFO 4308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-08 16:48:08.314  INFO 4308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-08 16:48:08.314  INFO 4308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-08 16:48:08.419  INFO 4308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-08 16:48:08.420  INFO 4308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1135 ms
-2022-07-08 16:48:08.757  INFO 4308 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-08 16:48:09.903  INFO 4308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-08 16:48:09.912  INFO 4308 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 3.202 seconds (JVM running for 4.375)
-2022-07-08 16:48:17.145  INFO 4308 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-08 16:48:17.145  INFO 4308 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-08 16:48:17.147  INFO 4308 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-07-08 16:48:17.248  WARN 4308 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : 1160124555@qq.com
-2022-07-08 16:48:17.248  WARN 4308 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : 12345678904
-2022-07-08 16:48:17.248  WARN 4308 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : 809762
-2022-07-08 16:52:06.858  WARN 4308 --- [http-nio-80-exec-2] c.h.g.service.impl.UserServiceImpl       : 1160124555@qq.com
-2022-07-08 16:52:06.859  WARN 4308 --- [http-nio-80-exec-2] c.h.g.service.impl.UserServiceImpl       : 13670583974
-2022-07-08 16:52:06.859  WARN 4308 --- [http-nio-80-exec-2] c.h.g.service.impl.UserServiceImpl       : 809762
-2022-07-08 17:06:20.136  WARN 4308 --- [http-nio-80-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [280] milliseconds.
-2022-07-08 17:06:20.139  WARN 4308 --- [http-nio-80-exec-4] c.h.g.service.impl.UserServiceImpl       : 12345678901
-2022-07-08 17:06:52.207  WARN 4308 --- [http-nio-80-exec-5] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码579738
-2022-07-08 17:09:22.213  WARN 4308 --- [http-nio-80-exec-2] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码983195
-2022-07-08 17:10:37.100  INFO 164 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 164 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-08 17:10:37.103  INFO 164 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
-2022-07-08 17:10:37.671  INFO 164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-08 17:10:37.672  INFO 164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-08 17:10:37.691  INFO 164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2022-07-08 17:10:38.123  INFO 164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-08 17:10:38.132  INFO 164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-08 17:10:38.133  INFO 164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-08 17:10:38.236  INFO 164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-08 17:10:38.237  INFO 164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1095 ms
-2022-07-08 17:10:38.519  INFO 164 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-08 17:10:39.619  INFO 164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-08 17:10:39.629  INFO 164 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 2.933 seconds (JVM running for 3.976)
-2022-07-08 17:10:57.060  INFO 164 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-08 17:10:57.061  INFO 164 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-08 17:10:57.062  INFO 164 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-08 17:10:57.384  WARN 164 --- [http-nio-80-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [270] milliseconds.
-2022-07-08 17:10:58.046  WARN 164 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码235137
-2022-07-08 17:11:20.542  WARN 164 --- [http-nio-80-exec-6] c.h.g.service.impl.UserServiceImpl       : 235137
-2022-07-08 17:11:34.004  WARN 164 --- [http-nio-80-exec-10] c.h.g.service.impl.UserServiceImpl       : 235137
+2022-07-11 11:14:37.878  INFO 9416 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 9416 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-11 11:14:37.884  INFO 9416 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
+2022-07-11 11:14:38.676  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-11 11:14:38.678  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-11 11:14:38.703  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-07-11 11:14:39.161  INFO 9416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-11 11:14:39.169  INFO 9416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 11:14:39.170  INFO 9416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 11:14:39.307  INFO 9416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 11:14:39.307  INFO 9416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1371 ms
+2022-07-11 11:14:39.771  INFO 9416 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-11 11:14:41.475  INFO 9416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-11 11:14:41.485  INFO 9416 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 4.105 seconds (JVM running for 5.257)
+2022-07-11 11:20:24.737  INFO 9416 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 11:20:24.738  INFO 9416 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 11:20:24.739  INFO 9416 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-11 11:20:25.069  WARN 9416 --- [http-nio-80-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [271] milliseconds.
+2022-07-11 11:20:25.802  WARN 9416 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码608337
+2022-07-11 11:20:51.186  WARN 9416 --- [http-nio-80-exec-6] c.h.g.service.impl.UserServiceImpl       : 608337
+2022-07-11 11:51:01.182  INFO 1220 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 1220 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-11 11:51:01.184  INFO 1220 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
+2022-07-11 11:51:01.749  INFO 1220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-11 11:51:01.750  INFO 1220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-11 11:51:01.766  INFO 1220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2022-07-11 11:51:02.148  INFO 1220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-11 11:51:02.159  INFO 1220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 11:51:02.159  INFO 1220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 11:51:02.254  INFO 1220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 11:51:02.254  INFO 1220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1020 ms
+2022-07-11 11:51:03.024  INFO 1220 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-11 11:51:03.504  INFO 1220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-11 11:51:03.514  INFO 1220 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 2.762 seconds (JVM running for 3.749)
+2022-07-11 11:51:30.910  INFO 1220 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 11:51:30.910  INFO 1220 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 11:51:30.910  INFO 1220 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-11 11:53:12.790  INFO 7416 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 7416 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-11 11:53:12.792  INFO 7416 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
+2022-07-11 11:53:13.344  INFO 7416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-11 11:53:13.345  INFO 7416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-11 11:53:13.361  INFO 7416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2022-07-11 11:53:44.549  INFO 4324 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 4324 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-11 11:53:44.552  INFO 4324 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
+2022-07-11 11:53:45.113  INFO 4324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-11 11:53:45.114  INFO 4324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-11 11:53:45.132  INFO 4324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2022-07-11 11:53:45.532  INFO 4324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-11 11:53:45.540  INFO 4324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 11:53:45.540  INFO 4324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 11:53:45.635  INFO 4324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 11:53:45.636  INFO 4324 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2022-07-11 11:53:46.399  INFO 4324 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-11 11:53:46.846  INFO 4324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-11 11:53:46.854  INFO 4324 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 2.716 seconds (JVM running for 3.64)
+2022-07-11 11:53:55.513  INFO 4324 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 11:53:55.513  INFO 4324 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 11:53:55.514  INFO 4324 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-11 11:53:55.543  WARN 4324 --- [http-nio-80-exec-1] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-11 11:57:53.443  INFO 7592 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 7592 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-11 11:57:53.446  INFO 7592 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
+2022-07-11 11:57:53.973  INFO 7592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-11 11:57:53.975  INFO 7592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-11 11:57:53.991  INFO 7592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2022-07-11 11:57:54.402  INFO 7592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-11 11:57:54.410  INFO 7592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 11:57:54.410  INFO 7592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 11:57:54.508  INFO 7592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 11:57:54.509  INFO 7592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1021 ms
+2022-07-11 11:57:55.298  INFO 7592 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-11 11:57:55.807  INFO 7592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-11 11:57:55.817  INFO 7592 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 2.831 seconds (JVM running for 3.758)
+2022-07-11 11:59:33.535  INFO 7592 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 11:59:33.536  INFO 7592 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 11:59:33.538  INFO 7592 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-11 11:59:33.565  WARN 7592 --- [http-nio-80-exec-1] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-11 11:59:33.843  WARN 7592 --- [http-nio-80-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [256] milliseconds.
+2022-07-11 11:59:33.858  WARN 7592 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : 12345678901
+2022-07-11 11:59:46.678  WARN 7592 --- [http-nio-80-exec-2] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-11 11:59:47.331  WARN 7592 --- [http-nio-80-exec-2] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码239203
+2022-07-11 12:00:02.684  WARN 7592 --- [http-nio-80-exec-3] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-11 12:00:02.718  WARN 7592 --- [http-nio-80-exec-3] c.h.g.service.impl.UserServiceImpl       : 239203
+2022-07-11 12:00:19.938  WARN 7592 --- [http-nio-80-exec-6] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------

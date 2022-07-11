@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 /**
  * @author DAHUANG
  * @date 2022/7/5
+ * 不可暴漏的实体信息
  */
 @Data
 @Accessors(chain = true)
