@@ -4,7 +4,10 @@ import com.hzh.gatheringproject.controller.UploadController;
 import com.hzh.gatheringproject.dto.Result;
 import com.hzh.gatheringproject.util.RegexUtils;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.UUID;
 
 @SpringBootTest
 class GatheringProjectApplicationTests {
@@ -32,8 +35,11 @@ class GatheringProjectApplicationTests {
 
     @Test
     void testRegister(){
-        System.out.println(RegexUtils.isEmailInvalid("1160124555@qq.com"));
-        System.out.println(RegexUtils.isPhoneInvalid("13670583985"));
+        System.out.println(UUID.randomUUID());
+    }
+
+    @Test
+    void testNettyClient(){
     }
 
 }

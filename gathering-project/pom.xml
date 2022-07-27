@@ -105,9 +105,51 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
-
+        <!--辅助依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--netty-->
+        <dependency>
+            <groupId>io.gitlab.leibnizhu</groupId>
+            <artifactId>spring-boot-starter-netty</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <!--josn解析gson包-->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
     </dependencies>
-
+    <!--激活多个yml文件-->
+    <profiles>
+        <profile>
+            <id>en_df_yml</id>
+            <properties>
+                <profile.active>default</profile.active>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>en_netty_yml</id>
+            <properties>
+                <profile.active>nettyConf</profile.active>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
     <build>
         <plugins>
             <plugin>

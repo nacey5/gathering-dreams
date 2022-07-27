@@ -1,10 +1,6 @@
 package com.hzh.gatheringproject.controller;
 
-import com.hzh.gatheringproject.dto.LoginFormDTO;
-import com.hzh.gatheringproject.dto.RegisterInfoDTO;
-import com.hzh.gatheringproject.dto.Result;
-import com.hzh.gatheringproject.dto.UserDTO;
-import com.hzh.gatheringproject.entity.User;
+import com.hzh.gatheringproject.dto.*;
 import com.hzh.gatheringproject.service.UserService;
 import com.hzh.gatheringproject.util.UserHolder;
 import lombok.extern.slf4j.Slf4j;
@@ -48,7 +44,19 @@ public class UserController {
     @GetMapping("/me")
     public Result me(){
         UserDTO user = UserHolder.getUser();
+        log.warn(user.toString());
         return Result.ok(user);
     }
+
+    @PostMapping("/completePersonal")
+    public Result completePersonal(@RequestBody UserComplete userComplete){
+        return userService.completePersonal(userComplete);
+    }
+
+    @GetMapping("/meDetail")
+    public Result meDetail(@RequestParam("id") int id){
+        return userService.meDetail(id);
+    }
+
 
 }

@@ -1,81 +1,97 @@
-2022-07-11 11:14:37.878  INFO 9416 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 9416 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-11 11:14:37.884  INFO 9416 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
-2022-07-11 11:14:38.676  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-11 11:14:38.678  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-11 11:14:38.703  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
-2022-07-11 11:14:39.161  INFO 9416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-11 11:14:39.169  INFO 9416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-11 11:14:39.170  INFO 9416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-11 11:14:39.307  INFO 9416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-11 11:14:39.307  INFO 9416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1371 ms
-2022-07-11 11:14:39.771  INFO 9416 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-11 11:14:41.475  INFO 9416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-11 11:14:41.485  INFO 9416 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 4.105 seconds (JVM running for 5.257)
-2022-07-11 11:20:24.737  INFO 9416 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-11 11:20:24.738  INFO 9416 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-11 11:20:24.739  INFO 9416 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-11 11:20:25.069  WARN 9416 --- [http-nio-80-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [271] milliseconds.
-2022-07-11 11:20:25.802  WARN 9416 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码608337
-2022-07-11 11:20:51.186  WARN 9416 --- [http-nio-80-exec-6] c.h.g.service.impl.UserServiceImpl       : 608337
-2022-07-11 11:51:01.182  INFO 1220 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 1220 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-11 11:51:01.184  INFO 1220 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
-2022-07-11 11:51:01.749  INFO 1220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-11 11:51:01.750  INFO 1220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-11 11:51:01.766  INFO 1220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2022-07-11 11:51:02.148  INFO 1220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-11 11:51:02.159  INFO 1220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-11 11:51:02.159  INFO 1220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-11 11:51:02.254  INFO 1220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-11 11:51:02.254  INFO 1220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1020 ms
-2022-07-11 11:51:03.024  INFO 1220 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-11 11:51:03.504  INFO 1220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-11 11:51:03.514  INFO 1220 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 2.762 seconds (JVM running for 3.749)
-2022-07-11 11:51:30.910  INFO 1220 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-11 11:51:30.910  INFO 1220 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-11 11:51:30.910  INFO 1220 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-07-11 11:53:12.790  INFO 7416 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 7416 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-11 11:53:12.792  INFO 7416 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
-2022-07-11 11:53:13.344  INFO 7416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-11 11:53:13.345  INFO 7416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-11 11:53:13.361  INFO 7416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2022-07-11 11:53:44.549  INFO 4324 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 4324 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-11 11:53:44.552  INFO 4324 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
-2022-07-11 11:53:45.113  INFO 4324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-11 11:53:45.114  INFO 4324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-11 11:53:45.132  INFO 4324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2022-07-11 11:53:45.532  INFO 4324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-11 11:53:45.540  INFO 4324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-11 11:53:45.540  INFO 4324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-11 11:53:45.635  INFO 4324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-11 11:53:45.636  INFO 4324 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
-2022-07-11 11:53:46.399  INFO 4324 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-11 11:53:46.846  INFO 4324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-11 11:53:46.854  INFO 4324 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 2.716 seconds (JVM running for 3.64)
-2022-07-11 11:53:55.513  INFO 4324 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-11 11:53:55.513  INFO 4324 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-11 11:53:55.514  INFO 4324 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-11 11:53:55.543  WARN 4324 --- [http-nio-80-exec-1] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
-2022-07-11 11:57:53.443  INFO 7592 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 9.0.4 on DESKTOP-TSRTILN with PID 7592 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-11 11:57:53.446  INFO 7592 --- [main] c.h.g.GatheringProjectApplication        : The following 3 profiles are active: "default", "dfDB", "dfDefaultAddress"
-2022-07-11 11:57:53.973  INFO 7592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-11 11:57:53.975  INFO 7592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-11 11:57:53.991  INFO 7592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2022-07-11 11:57:54.402  INFO 7592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-11 11:57:54.410  INFO 7592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-11 11:57:54.410  INFO 7592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-11 11:57:54.508  INFO 7592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-11 11:57:54.509  INFO 7592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1021 ms
-2022-07-11 11:57:55.298  INFO 7592 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-11 11:57:55.807  INFO 7592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-11 11:57:55.817  INFO 7592 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 2.831 seconds (JVM running for 3.758)
-2022-07-11 11:59:33.535  INFO 7592 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-11 11:59:33.536  INFO 7592 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-11 11:59:33.538  INFO 7592 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-07-11 11:59:33.565  WARN 7592 --- [http-nio-80-exec-1] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
-2022-07-11 11:59:33.843  WARN 7592 --- [http-nio-80-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [256] milliseconds.
-2022-07-11 11:59:33.858  WARN 7592 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : 12345678901
-2022-07-11 11:59:46.678  WARN 7592 --- [http-nio-80-exec-2] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
-2022-07-11 11:59:47.331  WARN 7592 --- [http-nio-80-exec-2] c.h.g.service.impl.UserServiceImpl       : 发送短信验证成功,验证码239203
-2022-07-11 12:00:02.684  WARN 7592 --- [http-nio-80-exec-3] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
-2022-07-11 12:00:02.718  WARN 7592 --- [http-nio-80-exec-3] c.h.g.service.impl.UserServiceImpl       : 239203
-2022-07-11 12:00:19.938  WARN 7592 --- [http-nio-80-exec-6] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-27 11:10:27.687  INFO 16064 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 1.8.0_292 on DESKTOP-TSRTILN with PID 16064 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-27 11:10:27.693  INFO 16064 --- [main] c.h.g.GatheringProjectApplication        : The following 6 profiles are active: "default", "dfDB", "dfDefaultAddress", "nettyConf", "nettyServer", "nettyClient"
+2022-07-27 11:10:28.779  INFO 16064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-27 11:10:28.781  INFO 16064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-27 11:10:28.804  INFO 16064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-07-27 11:10:29.283  INFO 16064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-27 11:10:29.299  INFO 16064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-27 11:10:29.299  INFO 16064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-27 11:10:29.889  INFO 16064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-27 11:10:29.890  INFO 16064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2142 ms
+2022-07-27 11:10:31.128  INFO 16064 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-27 11:10:31.670  INFO 16064 --- [main] org.redisson.Version                     : Redisson 3.13.6
+2022-07-27 11:10:42.367  WARN 16064 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/hzh/gatheringproject/config/RedissionConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /192.168.48.129:6380
+2022-07-27 11:10:42.369  INFO 16064 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-07-27 11:10:42.382  INFO 16064 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-27 11:10:42.392  INFO 16064 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-27 11:10:42.421 ERROR 16064 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/hzh/gatheringproject/config/RedissionConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /192.168.48.129:6380
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.hzh.gatheringproject.GatheringProjectApplication.main(GatheringProjectApplication.java:15) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /192.168.48.129:6380
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 19 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /192.168.48.129:6380
+	at org.redisson.connection.pool.ConnectionPool$1.lambda$run$0(ConnectionPool.java:159) ~[redisson-3.13.6.jar:3.13.6]
+	at org.redisson.misc.RedissonPromise.lambda$onComplete$0(RedissonPromise.java:183) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at org.redisson.misc.RedissonPromise.tryFailure(RedissonPromise.java:96) ~[redisson-3.13.6.jar:3.13.6]
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:329) ~[redisson-3.13.6.jar:3.13.6]
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$1(ConnectionPool.java:295) ~[redisson-3.13.6.jar:3.13.6]
+	at org.redisson.misc.RedissonPromise.lambda$onComplete$0(RedissonPromise.java:183) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at org.redisson.misc.RedissonPromise.tryFailure(RedissonPromise.java:96) ~[redisson-3.13.6.jar:3.13.6]
+	at org.redisson.client.RedisClient$3$2.run(RedisClient.java:307) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_292]
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.48.129:6380
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	... 8 common frames omitted
+
+2022-07-27 11:24:22.356  INFO 1028 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 1.8.0_292 on DESKTOP-TSRTILN with PID 1028 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-27 11:24:22.360  INFO 1028 --- [main] c.h.g.GatheringProjectApplication        : No active profile set, falling back to 3 default profiles: "default", "dfDB", "dfDefaultAddress"
+2022-07-27 11:24:23.055  INFO 1028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-27 11:24:23.057  INFO 1028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-27 11:24:23.077  INFO 1028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-07-27 11:24:23.510  INFO 1028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-27 11:24:23.518  INFO 1028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-27 11:24:23.518  INFO 1028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-27 11:24:23.605  INFO 1028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-27 11:24:23.605  INFO 1028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1189 ms
+2022-07-27 11:24:24.582  INFO 1028 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-27 11:24:24.861  INFO 1028 --- [main] org.redisson.Version                     : Redisson 3.13.6
+2022-07-27 11:24:25.282  INFO 1028 --- [redisson-netty-4-23] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.48.129:6380
+2022-07-27 11:24:25.292  INFO 1028 --- [redisson-netty-4-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.48.129:6380
+2022-07-27 11:24:25.787  INFO 1028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-27 11:24:25.798  INFO 1028 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 4.026 seconds (JVM running for 4.875)

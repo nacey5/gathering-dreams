@@ -4,11 +4,13 @@ import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @author DAHUANG
  * @date 2022/7/6
  */
+@Configuration
 public class RedissionConfig {
 
     @Bean

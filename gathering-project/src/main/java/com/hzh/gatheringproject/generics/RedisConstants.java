@@ -18,4 +18,11 @@ public class RedisConstants {
 
     public static final String LOGIN_USER_KEY="login:token:";
     public static final Long LOGIN_USER_TTL=1800L;
+
+
+    public static final String FOLLOW_USER_KEY = "follows:";
+    public static final String FOLLOW_TYPE_USER = "user:";
+    public static final String FOLLOW_TYPE_PROJECT = "project:";
+    public static final String FOLLOW_TYPE_TEACHER = "teacher:";
+    public static final String FOLLOW_TYPE_COURSE = "course:";
 }

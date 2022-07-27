@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @Data
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = false)
-public class UserDTO extends User {
+public class UserDTO extends User{
     private  int id;
     private  String name;
     private  String nickName;

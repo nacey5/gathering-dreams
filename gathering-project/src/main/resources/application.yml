@@ -2,9 +2,9 @@ server:
   port: 80
 spring:
   profiles:
-    active: default
     group:
-      "default": dfDB,dfDefaultAddress
+      "default": dfDB,dfDefaultAddress,dfNetty
+      "nettyConf": nettyServer,nettyClient
   application:
     name: gathering-dreams
 logging:

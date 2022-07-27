@@ -4,12 +4,13 @@ import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
 import cn.hutool.core.lang.UUID;
 import cn.hutool.core.util.RandomUtil;
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.hzh.gatheringproject.dto.LoginFormDTO;
-import com.hzh.gatheringproject.dto.RegisterInfoDTO;
-import com.hzh.gatheringproject.dto.Result;
+import com.hzh.gatheringproject.dto.*;
 import com.hzh.gatheringproject.entity.User;
+import com.hzh.gatheringproject.entity.UserInfoPo;
+import com.hzh.gatheringproject.exception.RegisterException;
 import com.hzh.gatheringproject.generics.EmailConstants;
 import com.hzh.gatheringproject.generics.RedisConstants;
 import com.hzh.gatheringproject.generics.SystemConstants;
@@ -21,11 +22,15 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import com.hzh.gatheringproject.mapper.*;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
+
 import javax.annotation.Resource;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpSession;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,8 +40,8 @@ import java.util.concurrent.TimeUnit;
  * @author DAHUANG
  * @date 2022/7/5
  */
-@Service
 @Slf4j
+@Service
 public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements UserService{
 
     @Resource
@@ -45,6 +50,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
     private StringRedisTemplate stringRedisTemplate;
     @Resource
     private JavaMailSender javaMailSender;
+    @Resource
+    private UserInfoPoMapper userInfoPoMapper;
 
 
     @Override
@@ -93,6 +100,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
                                 setFieldValueEditor((fieldName,fieldValue)->fieldValue.toString()));
                 //t3--存储数据到redis中
                 stringRedisTemplate.opsForHash().putAll(RedisConstants.LOGIN_USER_KEY+token,userMap);
+                log.warn("--------------redis添加token用户数据-------------------");
+                log.warn(RedisConstants.LOGIN_USER_KEY+token);
                 //设置token的有效期
                 stringRedisTemplate.expire(RedisConstants.LOGIN_USER_KEY+token, RedisConstants.LOGIN_USER_TTL,TimeUnit.SECONDS);
                 //返回token
@@ -117,10 +126,15 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
         String checkPhoneCode = stringRedisTemplate.opsForValue().get(RedisConstants.LOGIN_CODE_KEY + registerInfoDTO.getPhone());
         String checkEmailCode = stringRedisTemplate.opsForValue().get(RedisConstants.EMAIL_CODE_KEY + registerInfoDTO.getEmail());
         if ((registerInfoDTO.getEmailCode().equals(checkEmailCode))&&(registerInfoDTO.getPhoneCode().equals(checkPhoneCode))){
+            registerInfoDTO.setName(UUID.randomUUID()+"");
             int insert = userMapper.insert(registerInfoDTO);
             log.warn(insert+"");
             if (insert>0) {
-                return Result.ok("注册成功");
+                LoginFormDTO loginFormDTO=new LoginFormDTO();
+                loginFormDTO.setCodePhoneOrEmail(registerInfoDTO.getEmail());
+                loginFormDTO.setPassword(registerInfoDTO.getPassword());
+                Result result = selectUserByCodeAndPassword(loginFormDTO, null);
+                return result;
             }
         }
         return Result.fail("验证码错误");
@@ -181,6 +195,32 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
         }
     }
 
+    @Override
+    @Transactional
+    public Result completePersonal(UserComplete userComplete) {
+        log.warn(userComplete.getCompany().toString());
+        log.warn(userComplete.getUserDTO().toString());
+        int udp = userMapper.updateById(userComplete.getUserDTO());
+        int insert=userInfoPoMapper.insert(userComplete.getCompany());
+        if (RegisterException.registerResult(insert)&&RegisterException.registerResult(udp)) {
+            return Result.ok(userComplete);
+        }
+        TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
+        log.warn("完善失败");
+        return Result.fail("修改失败",404);
+    }
+
+    @Override
+    public Result meDetail(int id) {
+        QueryWrapper<UserInfoPo> queryWrapper=new QueryWrapper<>();
+        queryWrapper.eq("user_id",id);
+        User user = userMapper.selectById(id);
+        UserInfoPo userInfoPo = userInfoPoMapper.selectOne(queryWrapper);
+        List<Object> retList=new ArrayList<>();
+        retList.add(user);
+        retList.add(userInfoPo);
+        return Result.ok(retList, (long) retList.size());
+    }
 
 
 }

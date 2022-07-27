@@ -1,9 +1,6 @@
 package com.hzh.gatheringproject.service;
 
-import com.hzh.gatheringproject.dto.LoginFormDTO;
-import com.hzh.gatheringproject.dto.RegisterInfoDTO;
-import com.hzh.gatheringproject.dto.Result;
-import com.hzh.gatheringproject.entity.User;
+import com.hzh.gatheringproject.dto.*;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
@@ -43,4 +40,18 @@ public interface UserService {
      * @return
      */
     Result sendMailCode(String mail);
+
+    /**
+     * 完善详细信息
+     * @param userComplete
+     * @return
+     */
+    Result completePersonal(UserComplete userComplete);
+
+    /**
+     * 获得详细信息
+     * @param id
+     * @return
+     */
+    Result meDetail(int id);
 }
