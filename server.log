@@ -1,97 +1,110 @@
-2022-07-27 11:10:27.687  INFO 16064 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 1.8.0_292 on DESKTOP-TSRTILN with PID 16064 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-27 11:10:27.693  INFO 16064 --- [main] c.h.g.GatheringProjectApplication        : The following 6 profiles are active: "default", "dfDB", "dfDefaultAddress", "nettyConf", "nettyServer", "nettyClient"
-2022-07-27 11:10:28.779  INFO 16064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-27 11:10:28.781  INFO 16064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-27 11:10:28.804  INFO 16064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
-2022-07-27 11:10:29.283  INFO 16064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-27 11:10:29.299  INFO 16064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-27 11:10:29.299  INFO 16064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-27 11:10:29.889  INFO 16064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-27 11:10:29.890  INFO 16064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2142 ms
-2022-07-27 11:10:31.128  INFO 16064 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-27 11:10:31.670  INFO 16064 --- [main] org.redisson.Version                     : Redisson 3.13.6
-2022-07-27 11:10:42.367  WARN 16064 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/hzh/gatheringproject/config/RedissionConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /192.168.48.129:6380
-2022-07-27 11:10:42.369  INFO 16064 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-07-27 11:10:42.382  INFO 16064 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-07-27 11:10:42.392  INFO 16064 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-07-27 11:10:42.421 ERROR 16064 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/hzh/gatheringproject/config/RedissionConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /192.168.48.129:6380
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.21.jar:5.3.21]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
-	at com.hzh.gatheringproject.GatheringProjectApplication.main(GatheringProjectApplication.java:15) [classes/:na]
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /192.168.48.129:6380
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.21.jar:5.3.21]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.21.jar:5.3.21]
-	... 19 common frames omitted
-Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /192.168.48.129:6380
-	at org.redisson.connection.pool.ConnectionPool$1.lambda$run$0(ConnectionPool.java:159) ~[redisson-3.13.6.jar:3.13.6]
-	at org.redisson.misc.RedissonPromise.lambda$onComplete$0(RedissonPromise.java:183) ~[redisson-3.13.6.jar:3.13.6]
-	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at org.redisson.misc.RedissonPromise.tryFailure(RedissonPromise.java:96) ~[redisson-3.13.6.jar:3.13.6]
-	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:329) ~[redisson-3.13.6.jar:3.13.6]
-	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$1(ConnectionPool.java:295) ~[redisson-3.13.6.jar:3.13.6]
-	at org.redisson.misc.RedissonPromise.lambda$onComplete$0(RedissonPromise.java:183) ~[redisson-3.13.6.jar:3.13.6]
-	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at org.redisson.misc.RedissonPromise.tryFailure(RedissonPromise.java:96) ~[redisson-3.13.6.jar:3.13.6]
-	at org.redisson.client.RedisClient$3$2.run(RedisClient.java:307) ~[redisson-3.13.6.jar:3.13.6]
-	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_292]
-Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.48.129:6380
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
-	... 8 common frames omitted
-
-2022-07-27 11:24:22.356  INFO 1028 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 1.8.0_292 on DESKTOP-TSRTILN with PID 1028 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
-2022-07-27 11:24:22.360  INFO 1028 --- [main] c.h.g.GatheringProjectApplication        : No active profile set, falling back to 3 default profiles: "default", "dfDB", "dfDefaultAddress"
-2022-07-27 11:24:23.055  INFO 1028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-07-27 11:24:23.057  INFO 1028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-27 11:24:23.077  INFO 1028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-2022-07-27 11:24:23.510  INFO 1028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2022-07-27 11:24:23.518  INFO 1028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-27 11:24:23.518  INFO 1028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-07-27 11:24:23.605  INFO 1028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-27 11:24:23.605  INFO 1028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1189 ms
-2022-07-27 11:24:24.582  INFO 1028 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-27 11:24:24.861  INFO 1028 --- [main] org.redisson.Version                     : Redisson 3.13.6
-2022-07-27 11:24:25.282  INFO 1028 --- [redisson-netty-4-23] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.48.129:6380
-2022-07-27 11:24:25.292  INFO 1028 --- [redisson-netty-4-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.48.129:6380
-2022-07-27 11:24:25.787  INFO 1028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2022-07-27 11:24:25.798  INFO 1028 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 4.026 seconds (JVM running for 4.875)
+2022-07-30 14:53:55.576  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:53:56.769  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:53:58.577  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:53:59.770  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:01.577  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:02.772  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:04.579  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:05.773  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:07.582  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:08.773  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:10.583  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:11.775  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:13.583  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:14.777  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:16.585  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:17.780  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:19.586  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:20.782  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:21.877  WARN 11696 --- [http-nio-80-exec-3] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-30 14:54:21.883  WARN 11696 --- [http-nio-80-exec-3] c.h.g.i.RefreshTokenInterceptor          : -------------finx------
+2022-07-30 14:54:22.017  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:GroupCreateResponseMessage(super=AbstractResponseMessage(super=Message(sequenceId=0, messageType=5), success=true, reason=您已被拉入群聊1))
+2022-07-30 14:54:22.017  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:GroupCreateResponseMessage(super=AbstractResponseMessage(super=Message(sequenceId=0, messageType=5), success=true, reason=您已被拉入群聊1))
+2022-07-30 14:54:22.018  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:GroupCreateResponseMessage(super=AbstractResponseMessage(super=Message(sequenceId=0, messageType=5), success=true, reason=群聊1创建成功))
+2022-07-30 14:54:22.586  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:25.013  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:25.587  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:25.591  WARN 11696 --- [http-nio-80-exec-6] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-30 14:54:25.594  WARN 11696 --- [http-nio-80-exec-6] c.h.g.i.RefreshTokenInterceptor          : -------------finx------
+2022-07-30 14:54:28.013  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:28.588  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:31.014  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:31.188  WARN 11696 --- [http-nio-80-exec-7] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-30 14:54:31.191  WARN 11696 --- [http-nio-80-exec-7] c.h.g.i.RefreshTokenInterceptor          : -------------finx------
+2022-07-30 14:54:31.590  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:34.016  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:34.592  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:37.017  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:37.593  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:40.017  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:40.595  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:43.019  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:43.597  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:46.020  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:46.599  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:49.022  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:49.600  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:51.722  WARN 11696 --- [http-nio-80-exec-8] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-30 14:54:51.727  WARN 11696 --- [http-nio-80-exec-8] c.h.g.i.RefreshTokenInterceptor          : -------------finx------
+2022-07-30 14:54:51.737  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:GroupMembersResponseMessage(super=Message(sequenceId=0, messageType=13), members=[12, 1])
+2022-07-30 14:54:52.600  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:54.735  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:55.600  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:57.736  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:54:58.600  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:00.737  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:01.602  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:03.738  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:04.604  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:06.738  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:07.604  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:09.739  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:10.604  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:12.740  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:13.605  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:15.741  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:16.606  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:18.740  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:19.606  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:21.742  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:22.607  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:24.742  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:25.607  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:27.743  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:28.608  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:30.745  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:31.609  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:33.746  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:34.618  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:36.748  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:37.619  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:39.747  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:40.620  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:42.749  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:43.621  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:45.749  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:46.621  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:48.750  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:49.622  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:51.750  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:52.623  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:54.751  WARN 11696 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:55:55.623  WARN 11696 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-30 14:56:02.510  INFO 3620 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 1.8.0_292 on DESKTOP-TSRTILN with PID 3620 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-30 14:56:02.513  INFO 3620 --- [main] c.h.g.GatheringProjectApplication        : The following 4 profiles are active: "default", "dfDB", "dfDefaultAddress", "dfNetty"
+2022-07-30 14:56:03.484  INFO 3620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-30 14:56:03.487  INFO 3620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-30 14:56:03.525  INFO 3620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2022-07-30 14:56:04.178  INFO 3620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-30 14:56:04.190  INFO 3620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-30 14:56:04.191  INFO 3620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-30 14:56:04.315  INFO 3620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-30 14:56:04.315  INFO 3620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1740 ms
+2022-07-30 14:56:05.290  INFO 3620 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: public static java.lang.String com.hzh.gatheringproject.config.NettyDefaultConfig.serializerValue
+2022-07-30 14:56:05.338  WARN 3620 --- [chat-server] c.h.g.config.NettyDefaultConfig          : 正在加载netty启动器
+2022-07-30 14:56:05.705  INFO 3620 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-30 14:56:06.064  INFO 3620 --- [main] org.redisson.Version                     : Redisson 3.13.6
+2022-07-30 14:56:06.245  INFO 3620 --- [redisson-netty-6-23] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.48.129:6380
+2022-07-30 14:56:06.265  INFO 3620 --- [redisson-netty-6-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.48.129:6380
+2022-07-30 14:56:06.961  INFO 3620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-30 14:56:06.975  INFO 3620 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 5.085 seconds (JVM running for 6.273)

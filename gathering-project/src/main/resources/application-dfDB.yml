@@ -26,4 +26,3 @@ spring:
   redis:
     port: 6380
     host: 192.168.48.129
-

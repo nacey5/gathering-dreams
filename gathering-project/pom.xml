@@ -130,7 +130,7 @@
         </dependency>
     </dependencies>
     <!--激活多个yml文件-->
-    <profiles>
+    <!--<profiles>
         <profile>
             <id>en_df_yml</id>
             <properties>
@@ -146,10 +146,10 @@
                 <profile.active>nettyConf</profile.active>
             </properties>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
         </profile>
-    </profiles>
+    </profiles>-->
     <build>
         <plugins>
             <plugin>

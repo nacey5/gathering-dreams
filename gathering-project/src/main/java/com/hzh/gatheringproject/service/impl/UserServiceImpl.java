@@ -7,6 +7,8 @@ import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hzh.gatheringproject.controller.ClientController;
+import com.hzh.gatheringproject.controller.UserController;
 import com.hzh.gatheringproject.dto.*;
 import com.hzh.gatheringproject.entity.User;
 import com.hzh.gatheringproject.entity.UserInfoPo;
@@ -16,10 +18,14 @@ import com.hzh.gatheringproject.generics.RedisConstants;
 import com.hzh.gatheringproject.generics.SystemConstants;
 import com.hzh.gatheringproject.service.UserService;
 import com.hzh.gatheringproject.util.RegexUtils;
+import io.netty.channel.Channel;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
 import com.hzh.gatheringproject.mapper.*;
 import org.springframework.transaction.annotation.Transactional;
@@ -52,6 +58,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
     private JavaMailSender javaMailSender;
     @Resource
     private UserInfoPoMapper userInfoPoMapper;
+    @Autowired
+    ClientController clientController;
+    @Autowired
+    ThreadPoolTaskExecutor threadPoolTaskExecutor;
 
 
     @Override
@@ -80,9 +90,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
                 stringRedisTemplate.opsForHash().putAll(RedisConstants.LOGIN_USER_KEY+token,userMap);
                 //设置token的有效期
                 stringRedisTemplate.expire(RedisConstants.LOGIN_USER_KEY+token, RedisConstants.LOGIN_USER_TTL,TimeUnit.SECONDS);
+
+                clientController.connectToClient(user.getId()+"");
                 //返回token
                 return Result.ok(token);
-
             }
             //不存在，返回失败信息让其注册
             return Result.fail("您还没有注册或者验证码失败");
@@ -105,7 +116,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
                 //设置token的有效期
                 stringRedisTemplate.expire(RedisConstants.LOGIN_USER_KEY+token, RedisConstants.LOGIN_USER_TTL,TimeUnit.SECONDS);
                 //返回token
-                return Result.ok(token);
+                try {
+                    clientController.connectToClient(user.getId()+"");
+                }
+                finally {
+                    return Result.ok(token);
+                }
             }else {
                 return Result.fail("密码和手机或邮箱不匹配");
             }
@@ -134,7 +150,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
                 loginFormDTO.setCodePhoneOrEmail(registerInfoDTO.getEmail());
                 loginFormDTO.setPassword(registerInfoDTO.getPassword());
                 Result result = selectUserByCodeAndPassword(loginFormDTO, null);
-                return result;
+                try {
+                    User user = userMapper.selectOne(new QueryWrapper<User>().eq("phone", loginFormDTO.getCodePhoneOrEmail()).or().eq("email", loginFormDTO.getCodePhoneOrEmail()));
+                    clientController.connectToClient(user.getId()+"");
+                }finally {
+                    return result;
+                }
             }
         }
         return Result.fail("验证码错误");

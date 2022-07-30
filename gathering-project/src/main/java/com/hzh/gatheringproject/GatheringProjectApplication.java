@@ -11,7 +11,6 @@ import org.springframework.context.annotation.ComponentScan;
 public class GatheringProjectApplication {
 
     public static void main(String[] args) {
-        System.out.println("GOGOGGOGO");
         SpringApplication.run(GatheringProjectApplication.class, args);
     }
 

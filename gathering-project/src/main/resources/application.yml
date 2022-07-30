@@ -4,7 +4,7 @@ spring:
   profiles:
     group:
       "default": dfDB,dfDefaultAddress,dfNetty
-      "nettyConf": nettyServer,nettyClient
+    active: default
   application:
     name: gathering-dreams
 logging:
@@ -21,3 +21,10 @@ logging:
     rollingpolicy:
       max-file-size: 100KB
       file-name-pattern: server.%d{yyyy-MM-dd}.%i.log
+
+task:
+  pool:
+    corePoolSize: 5
+    maxPoolSize: 20
+    keepAliveSeconds: 300
+    queueCapacity: 50

@@ -18,7 +18,6 @@ public class RedissionConfig {
         //配置
         Config config = new Config();
         config.useSingleServer().setAddress("redis://192.168.48.129:6380");
-
         //创建redisson对象
         return Redisson.create(config);
     }

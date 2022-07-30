@@ -1,16 +1,18 @@
 package com.hzh.gatheringproject;
 
-import com.hzh.gatheringproject.controller.UploadController;
-import com.hzh.gatheringproject.dto.Result;
 import com.hzh.gatheringproject.util.RegexUtils;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import java.util.UUID;
 
 @SpringBootTest
 class GatheringProjectApplicationTests {
+
+    @Autowired
+    private ThreadPoolTaskExecutor threadPoolTaskExecutor;
 
     @Test
     void contextLoads() {
@@ -40,6 +42,29 @@ class GatheringProjectApplicationTests {
 
     @Test
     void testNettyClient(){
+        threadPoolTaskExecutor.execute(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i <100 ; i++) {
+                    if (i%2==0){
+                        System.out.println(i);
+                    }
+                }
+            }
+        });
+        threadPoolTaskExecutor.execute(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i <100 ; i++) {
+                    if (i%2==1){
+                        System.out.println(i);
+                    }
+                }
+            }
+        });
+
+        threadPoolTaskExecutor.shutdown();
+
     }
 
 }
