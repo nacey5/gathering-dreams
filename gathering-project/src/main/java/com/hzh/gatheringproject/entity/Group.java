@@ -8,6 +8,7 @@ import java.util.Set;
 /**
  * @author DAHUANG
  * @date 2022/7/27
+ * Not A Table
  * 聊天室，聊天组
  */
 @Data

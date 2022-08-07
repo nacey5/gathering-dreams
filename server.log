@@ -108,3 +108,240 @@
 2022-07-30 14:56:06.265  INFO 3620 --- [redisson-netty-6-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.48.129:6380
 2022-07-30 14:56:06.961  INFO 3620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
 2022-07-30 14:56:06.975  INFO 3620 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 5.085 seconds (JVM running for 6.273)
+2022-07-31 15:06:12.927  INFO 14936 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 1.8.0_292 on DESKTOP-TSRTILN with PID 14936 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-31 15:06:12.959  INFO 14936 --- [main] c.h.g.GatheringProjectApplication        : The following 4 profiles are active: "default", "dfDB", "dfDefaultAddress", "dfNetty"
+2022-07-31 15:06:14.097  INFO 14936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-31 15:06:14.099  INFO 14936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-31 15:06:14.127  INFO 14936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2022-07-31 15:06:14.593  INFO 14936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-31 15:06:14.601  INFO 14936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-31 15:06:14.601  INFO 14936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-31 15:06:15.116  INFO 14936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-31 15:06:15.116  INFO 14936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2111 ms
+2022-07-31 15:06:15.870  INFO 14936 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: public static java.lang.String com.hzh.gatheringproject.config.NettyDefaultConfig.serializerValue
+2022-07-31 15:06:15.906  WARN 14936 --- [chat-server] c.h.g.config.NettyDefaultConfig          : 正在加载netty启动器
+2022-07-31 15:06:16.196  INFO 14936 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-31 15:06:16.491  INFO 14936 --- [main] org.redisson.Version                     : Redisson 3.13.6
+2022-07-31 15:06:16.620  INFO 14936 --- [redisson-netty-6-18] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.48.129:6380
+2022-07-31 15:06:16.636  INFO 14936 --- [redisson-netty-6-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.48.129:6380
+2022-07-31 15:06:17.207  INFO 14936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-31 15:06:17.217  INFO 14936 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 4.699 seconds (JVM running for 8.299)
+2022-07-31 15:08:11.719  INFO 14936 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-31 15:08:11.719  INFO 14936 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-31 15:08:11.722  INFO 14936 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-31 15:08:11.742  WARN 14936 --- [http-nio-80-exec-1] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-31 15:08:12.515  WARN 14936 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : --------------redis添加token用户数据-------------------
+2022-07-31 15:08:12.516  WARN 14936 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : login:token:0aaff1be006544d294376200a37f68ee
+2022-07-31 15:08:12.529  WARN 14936 --- [thread-call-runner-%d2] c.h.g.controller.ClientController        : ====客户端给正在尝试开启.....===============
+2022-07-31 15:08:12.559  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : ====客户端尝试初始化====================
+2022-07-31 15:08:12.581  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:LoginResponseMessage(super=AbstractResponseMessage(super=Message(sequenceId=0, messageType=1), success=true, reason=12))
+2022-07-31 15:08:15.580  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:18.582  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:21.583  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:24.584  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:27.584  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:30.586  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:33.587  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:36.589  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:39.589  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:42.589  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:45.591  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:48.473  WARN 14936 --- [http-nio-80-exec-3] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-31 15:08:48.477  WARN 14936 --- [http-nio-80-exec-3] c.h.g.i.RefreshTokenInterceptor          : -------------finx------
+2022-07-31 15:08:48.592  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:51.591  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:54.592  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:08:57.592  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:00.593  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:03.594  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:06.595  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:09.597  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:12.598  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:15.597  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:18.599  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:21.602  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:24.603  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:27.605  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:30.604  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:32.044  WARN 14936 --- [http-nio-80-exec-4] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-31 15:09:32.054  WARN 14936 --- [http-nio-80-exec-4] c.h.g.service.impl.UserServiceImpl       : --------------redis添加token用户数据-------------------
+2022-07-31 15:09:32.055  WARN 14936 --- [http-nio-80-exec-4] c.h.g.service.impl.UserServiceImpl       : login:token:0ccdf91339814df587271c4ab11c3c5a
+2022-07-31 15:09:32.056  WARN 14936 --- [thread-call-runner-%d4] c.h.g.controller.ClientController        : ====客户端给正在尝试开启.....===============
+2022-07-31 15:09:32.077  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : ====客户端尝试初始化====================
+2022-07-31 15:09:32.080  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:LoginResponseMessage(super=AbstractResponseMessage(super=Message(sequenceId=0, messageType=1), success=true, reason=1))
+2022-07-31 15:09:33.605  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:35.080  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:36.605  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:38.080  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:39.607  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:40.295  WARN 14936 --- [http-nio-80-exec-6] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-31 15:09:40.298  WARN 14936 --- [http-nio-80-exec-6] c.h.g.i.RefreshTokenInterceptor          : -------------finx------
+2022-07-31 15:09:41.081  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:42.609  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:44.082  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:45.613  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:47.082  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:48.614  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:50.085  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:51.614  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:53.086  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:54.615  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:56.087  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:57.615  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:09:59.087  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:00.618  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:02.088  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:03.618  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:05.091  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:06.618  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:08.091  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:09.619  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:11.090  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:12.621  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:14.092  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:15.621  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:17.092  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:18.622  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:20.093  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:21.623  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:23.095  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:24.624  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:26.097  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:27.624  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:29.098  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:30.625  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:32.098  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:33.626  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:35.100  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:36.628  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:38.101  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:39.629  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:41.101  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:42.630  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:44.102  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:45.632  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:47.102  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:48.632  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:50.103  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:51.634  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:53.103  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:54.636  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:56.105  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:57.637  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:10:59.105  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:11:00.639  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:11:02.106  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:11:03.640  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:11:05.108  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:11:06.640  WARN 14936 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:11:08.108  WARN 14936 --- [nioEventLoopGroup-11-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:11:23.071  INFO 4572 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 1.8.0_292 on DESKTOP-TSRTILN with PID 4572 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-31 15:11:23.074  INFO 4572 --- [main] c.h.g.GatheringProjectApplication        : The following 4 profiles are active: "default", "dfDB", "dfDefaultAddress", "dfNetty"
+2022-07-31 15:11:23.784  INFO 4572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-31 15:11:23.786  INFO 4572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-31 15:11:23.817  INFO 4572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2022-07-31 15:11:24.330  INFO 4572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-31 15:11:24.341  INFO 4572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-31 15:11:24.341  INFO 4572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-31 15:11:24.445  INFO 4572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-31 15:11:24.445  INFO 4572 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1317 ms
+2022-07-31 15:11:25.249  INFO 4572 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: public static java.lang.String com.hzh.gatheringproject.config.NettyDefaultConfig.serializerValue
+2022-07-31 15:11:25.298  WARN 4572 --- [chat-server] c.h.g.config.NettyDefaultConfig          : 正在加载netty启动器
+2022-07-31 15:11:25.607  INFO 4572 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-31 15:11:25.950  INFO 4572 --- [main] org.redisson.Version                     : Redisson 3.13.6
+2022-07-31 15:11:26.078  INFO 4572 --- [redisson-netty-6-13] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.48.129:6380
+2022-07-31 15:11:26.088  INFO 4572 --- [redisson-netty-6-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.48.129:6380
+2022-07-31 15:11:26.645  INFO 4572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-31 15:11:26.656  INFO 4572 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 4.11 seconds (JVM running for 5.061)
+2022-07-31 15:12:48.038  INFO 20376 --- [main] c.h.g.GatheringProjectApplication        : Starting GatheringProjectApplication using Java 1.8.0_292 on DESKTOP-TSRTILN with PID 20376 (D:\gathering-dreams\gathering-project\target\classes started by 11601 in D:\gathering-dreams)
+2022-07-31 15:12:48.041  INFO 20376 --- [main] c.h.g.GatheringProjectApplication        : The following 4 profiles are active: "default", "dfDB", "dfDefaultAddress", "dfNetty"
+2022-07-31 15:12:48.933  INFO 20376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-31 15:12:48.936  INFO 20376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-31 15:12:48.969  INFO 20376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-07-31 15:12:49.580  INFO 20376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-31 15:12:49.591  INFO 20376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-31 15:12:49.591  INFO 20376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-31 15:12:49.715  INFO 20376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-31 15:12:49.716  INFO 20376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1607 ms
+2022-07-31 15:12:50.745  INFO 20376 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: public static java.lang.String com.hzh.gatheringproject.config.NettyDefaultConfig.serializerValue
+2022-07-31 15:12:50.799  WARN 20376 --- [chat-server] c.h.g.config.NettyDefaultConfig          : 正在加载netty启动器
+2022-07-31 15:12:51.178  INFO 20376 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-07-31 15:12:51.606  INFO 20376 --- [main] org.redisson.Version                     : Redisson 3.13.6
+2022-07-31 15:12:51.777  INFO 20376 --- [redisson-netty-6-23] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.48.129:6380
+2022-07-31 15:12:51.796  INFO 20376 --- [redisson-netty-6-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.48.129:6380
+2022-07-31 15:12:52.484  INFO 20376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-31 15:12:52.495  INFO 20376 --- [main] c.h.g.GatheringProjectApplication        : Started GatheringProjectApplication in 5.033 seconds (JVM running for 6.101)
+2022-07-31 15:13:13.194  INFO 20376 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-31 15:13:13.195  INFO 20376 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-31 15:13:13.197  INFO 20376 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-31 15:13:13.218  WARN 20376 --- [http-nio-80-exec-1] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-31 15:13:14.079  WARN 20376 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : --------------redis添加token用户数据-------------------
+2022-07-31 15:13:14.080  WARN 20376 --- [http-nio-80-exec-1] c.h.g.service.impl.UserServiceImpl       : login:token:dfad24d2531e4d848f698b9c8051ef58
+2022-07-31 15:13:14.095  WARN 20376 --- [thread-call-runner-%d2] c.h.g.controller.ClientController        : ====客户端给正在尝试开启.....===============
+2022-07-31 15:13:14.133  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : ====客户端尝试初始化====================
+2022-07-31 15:13:14.159  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:LoginResponseMessage(super=AbstractResponseMessage(super=Message(sequenceId=0, messageType=1), success=true, reason=1))
+2022-07-31 15:13:17.157  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:20.159  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:21.527  WARN 20376 --- [http-nio-80-exec-2] c.h.g.i.RefreshTokenInterceptor          : ------------RefreshTokenInterceptor------------
+2022-07-31 15:13:21.535  WARN 20376 --- [http-nio-80-exec-2] c.h.g.i.RefreshTokenInterceptor          : -------------finx------
+2022-07-31 15:13:23.161  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:26.163  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:29.165  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:32.166  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:35.167  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:38.168  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:41.168  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:44.169  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:47.170  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:50.171  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:53.172  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:56.174  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:13:59.174  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:02.174  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:05.176  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:08.177  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:11.178  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:14.179  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:17.181  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:20.180  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:23.183  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:26.184  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:29.185  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:32.188  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:35.187  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:38.188  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:41.189  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:44.190  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:47.192  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:50.192  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:53.194  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:56.195  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:14:59.196  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:02.197  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:05.197  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:08.197  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:11.199  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:14.199  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:17.202  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:20.203  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:23.202  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:26.204  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:29.204  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:32.206  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:35.209  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:38.209  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:41.209  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:44.211  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:47.211  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:50.214  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:53.214  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:56.215  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:15:59.216  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:16:02.218  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:16:05.218  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:16:08.219  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:16:11.221  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:16:14.222  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:16:17.224  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:16:20.223  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
+2022-07-31 15:16:23.225  WARN 20376 --- [nioEventLoopGroup-10-1] c.h.g.controller.ClientController        : msg:Message(sequenceId=0, messageType=15)
